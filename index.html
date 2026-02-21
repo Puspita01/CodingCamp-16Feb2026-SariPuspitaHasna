@@ -2,11 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test RevoU</title>
+    <title>Check List ku</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello World<h1>
-    
+
+<div class="container">
+    <h1>ChecklistKu</h1>
+
+    <div class="form">
+        <input type="text" id="todo-input" placeholder="Add a todo..." required>
+        <input type="date" id="date-input" required>
+        <button id="add-btn">+</button>
+    </div>
+
+    <div class="actions">
+        <button id="filter-btn">Filter Today</button>
+        <button id="delete-all-btn">Delete All</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="todo-list">
+        </tbody>
+    </table>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
